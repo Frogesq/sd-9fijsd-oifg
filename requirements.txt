@@ -1,0 +1,5 @@
+aiogram>=3.12
+asyncpg
+redis
+aiohttp
+python-dotenv

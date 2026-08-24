@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    # Режим сети "host" позволяет контейнеру использовать сетевой стек хоста (Linux).
+    # Бот сможет подключиться к localhost:5433 и localhost:6380, как указано в .env
+    network_mode: "host"
+    
+    # Команда для авто-перезапуска при изменении кода
+    command: watchmedo auto-restart --directory=./ --pattern=*.py --recursive -- python main.py
