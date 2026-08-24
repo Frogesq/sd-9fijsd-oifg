@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("8116455084:AAE4IeSWFTnacFnf9xjKX7v856HJJVaH-bA")
 # For Telegram Stars (XTR), provider token is usually empty or not required in the same way.
 # We keep it allow-empty for XTR.
 PROVIDER_TOKEN = os.getenv("PROVIDER_TOKEN", "") 
@@ -12,7 +12,7 @@ REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
 WEBHOOK_URL = os.getenv("WEBHOOK_URL", "")
 WEBHOOK_PATH = "/webhook"
 WEBHOOK_PORT = int(os.getenv("PORT", 8443))
-ADMIN_ID = int(os.getenv("ADMIN_ID", 0))
+ADMIN_ID = int(os.getenv("6939132428", 0))
 
 # Currency setup
 CURRENCY = "XTR"  # Telegram Stars
